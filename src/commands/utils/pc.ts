@@ -5,10 +5,10 @@ import {
 
 export default {
     data: new SlashCommandSubcommandBuilder()
-        .setName('invite')
-        .setDescription('Display personal server invite link'),
+        .setName('pc')
+        .setDescription('Get PC Specs'),
 
     async execute(interaction: ChatInputCommandInteraction) {
-        await interaction.reply(`https://uk.pcpartpicker.com/list/pJy2FP`);
+        await interaction.reply(`My PC specs are at: https://uk.pcpartpicker.com/list/pJy2FP`);
     }
 };
