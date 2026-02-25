@@ -9,6 +9,6 @@ export default {
         .setDescription('Display personal server invite link'),
 
     async execute(interaction: ChatInputCommandInteraction) {
-        await interaction.reply(`https://discord.gg/k8HrBvDaQn`);
+        await interaction.reply(`https://discord.gg/RQDRzK3VBe`);
     }
 };
