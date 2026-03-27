@@ -11,7 +11,7 @@ class DoughAPIClient {
 
     constructor() {
         this.token = process.env.DOUGH_API_TOKEN || '';
-        this.baseURL = process.env.DOUGH_API_URL || 'https://system.doughmination.win';
+        this.baseURL = 'https://system.doughmination.co.uk';
 
         if (!this.token) {
             console.error('WARNING: DOUGH_API_TOKEN not set in .env file!');
