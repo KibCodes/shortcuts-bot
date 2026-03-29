@@ -1,5 +1,6 @@
 import { Client, GatewayIntentBits } from 'discord.js';
 import { loadEvents } from './handlers/eventHandler';
+import { startFrontPoller } from './utils/frontPoller';
 
 // Create a new client instance with minimal intents for user-installed bot
 const client = new Client({
@@ -11,6 +12,11 @@ const client = new Client({
 // Load all events
 loadEvents(client).then(() => {
     console.log('All events loaded');
+});
+
+// Start the front poller once the bot is ready
+client.once('ready', () => {
+    startFrontPoller(client);
 });
 
 // Login to Discord
